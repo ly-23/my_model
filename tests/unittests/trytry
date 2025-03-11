@@ -1,0 +1,26 @@
+#include<vector>
+#include<stdio>
+
+
+void get_answer(vector<int> nums,int x){
+    int l=0;
+    int len=nums.size();
+    int r=len-1;
+    int mid=(l+r)/2;
+    int ans=-1;
+    while(l<r){
+        if(nums[mid]==x){
+            ans=mid;
+            return ans;
+        }
+        if(x>nums[mid]&&x>nums[r]){
+            l=mid;
+        }
+        else if(x>nums[l]&&x<nums[mid]){
+            l=mid;
+        }
+        else if(x>nums[l]&&x>nums[mid]){
+            r=mid;
+        }
+    }
+}

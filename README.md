@@ -3,4 +3,4 @@
 
 test是我每个部分写出来后 debug是否正确用的
 
-llama仍在完善
+llama仍在完善，有一些未完成。需要和hugging-face上配准
